@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.claude/
+.ruff_cache/
+*.safetensors

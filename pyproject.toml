@@ -1,0 +1,20 @@
+[project]
+name = "comfyui-convrot-controlnet"
+version = "1.0.0"
+description = "Load INT8 ConvRot (.comfy_quant) quantized ControlNet and model-patch files in stock ComfyUI loaders. No new nodes; patches ControlNetLoader, DiffControlNetLoader and ModelPatchLoader."
+authors = [{ name = "0xBeycan" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/0xBeycan/ComfyUI-ConvRot-ControlNet"
+Repository = "https://github.com/0xBeycan/ComfyUI-ConvRot-ControlNet"
+"Bug Tracker" = "https://github.com/0xBeycan/ComfyUI-ConvRot-ControlNet/issues"
+
+# ComfyUI Registry metadata (https://docs.comfy.org/registry/publishing)
+[tool.comfy]
+PublisherId = "0xbeycan"
+DisplayName = "ComfyUI-ConvRot-ControlNet"
+Icon = ""

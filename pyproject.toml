@@ -15,6 +15,6 @@ Repository = "https://github.com/0xBeycan/ComfyUI-ConvRot-ControlNet"
 
 # ComfyUI Registry metadata (https://docs.comfy.org/registry/publishing)
 [tool.comfy]
-PublisherId = "0xbeycan"
+PublisherId = "beycanai"
 DisplayName = "ComfyUI-ConvRot-ControlNet"
 Icon = ""

@@ -4,7 +4,7 @@ Load **INT8 ConvRot quantized ControlNet models** in ComfyUI with the stock load
 
 ComfyUI (0.33.x) can already run `int8_tensorwise` / `.comfy_quant` checkpoints through `MixedPrecisionOps` — but only for diffusion models and text encoders. The ControlNet and model-patch loaders never got that path, so an INT8 ControlNet file crashes on load. This package patches those loaders so quantized files just work, while unquantized files (bf16 / fp16 / fp8) go through the untouched stock code.
 
-Ready-made INT8 ControlNet files: **https://huggingface.co/beycanai/ControlNet-models-INT8-ConvRot**
+Ready-made INT8 ControlNet files: the `controlnet/` and `model_patches/` folders of **https://huggingface.co/beycanai/image-models**
 
 > **No new nodes are added.** After installing, the node list looks exactly the same. You keep using `Load ControlNet Model`, `Load ControlNet Model (diff)` and `ModelPatchLoader` — just pick the `_int8_convrot` file instead of the bf16 one. If you were expecting a new node to appear, that is why nothing shows up. Check the console for the `[ConvRot-ControlNet] patched 3/3 loaders` line to confirm it is active.
 
